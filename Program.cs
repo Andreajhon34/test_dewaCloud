@@ -5,10 +5,13 @@ using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.UseUrls("http://*:8080");
+
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
 
 // --------------------------------------------------------------------------
 // 1. ENDPOINT UTAMA: Informasi Server & Container (Sangat berguna untuk Horizontal Scaling)
