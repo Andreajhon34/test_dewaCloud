@@ -1,0 +1,10 @@
+@test_dewaCloud_HostAddress = http://localhost:5255
+
+GET {{test_dewaCloud_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{test_dewaCloud_HostAddress}}/api/home
+Accept: text/html
+
